@@ -43,7 +43,12 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname,  "./dist"),
     open: true,
-    port: 8081
+    port: 8082,
+    proxy: {
+      "/api": {
+        target: "http://localhost:9092"
+      }
+    }
   },
   plugins: [
     new htmlWebpackPlugin({
