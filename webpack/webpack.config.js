@@ -5,7 +5,7 @@ const webpack = require('webpack')
 
 module.exports = {
   // 必填 webpack执⾏行行构建⼊入⼝口 (字符串， 数组， 对象)
-  entry: './src/hotCss.js',
+  entry: './src/index.js',
   // entry: {
   //   main: "./src/index.js",
   //   other: "./src/other.js",
@@ -45,6 +45,8 @@ module.exports = {
     contentBase: path.resolve(__dirname, './dist'),
     open: true,
     hot: true,
+    // 强制浏览器不会刷新，哪怕hrm不生效
+    hotOnly: true,
     port: 8082,
     proxy: {
       '/api': {
