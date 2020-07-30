@@ -39,6 +39,16 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            // 使用什么规则做转换
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
     ],
   },
   devServer: {
