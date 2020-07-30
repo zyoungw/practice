@@ -5,7 +5,7 @@ const webpack = require('webpack')
 
 module.exports = {
   // 必填 webpack执⾏行行构建⼊入⼝口 (字符串， 数组， 对象)
-  entry: './src/index.js',
+  entry: './src/babel-test.js',
   // entry: {
   //   main: "./src/index.js",
   //   other: "./src/other.js",
@@ -41,27 +41,8 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            // 使用什么规则做转换
-            presets: [
-              [
-                '@babel/preset-env',
-                {
-                  targets: {
-                    edge: '17',
-                    firefox: '60',
-                    chrome: '67',
-                    safari: '11.1',
-                  },
-                  corejs: 2, //新版本需要指定核⼼心库版本 useBuiltIns: "usage"//按需注⼊入
-                  useBuiltIns: 'usage', //按需注⼊入, babel 7新功能
-                },
-              ],
-            ],
-          },
-        },
+        exclude: /node_modules/,
+        loader: 'babel-loader',
       },
     ],
   },
