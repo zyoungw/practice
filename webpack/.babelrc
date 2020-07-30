@@ -13,6 +13,7 @@
         "corejs": 2, //新版本需要指定核⼼心库版本
         "useBuiltIns": "usage" //按需注⼊入, babel 7新功能
       }
-    ]
+    ],
+    "@babel/preset-react"
   ]
 }

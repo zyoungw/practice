@@ -5,7 +5,7 @@ const webpack = require('webpack')
 
 module.exports = {
   // 必填 webpack执⾏行行构建⼊入⼝口 (字符串， 数组， 对象)
-  entry: './src/babel-test.js',
+  entry: './src/react-test.js',
   // entry: {
   //   main: "./src/index.js",
   //   other: "./src/other.js",
