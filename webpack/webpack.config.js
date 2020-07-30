@@ -45,7 +45,21 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             // 使用什么规则做转换
-            presets: ['@babel/preset-env'],
+            presets: [
+              [
+                '@babel/preset-env',
+                {
+                  targets: {
+                    edge: '17',
+                    firefox: '60',
+                    chrome: '67',
+                    safari: '11.1',
+                  },
+                  corejs: 2, //新版本需要指定核⼼心库版本 useBuiltIns: "usage"//按需注⼊入
+                  useBuiltIns: 'usage', //按需注⼊入, babel 7新功能
+                },
+              ],
+            ],
           },
         },
       },

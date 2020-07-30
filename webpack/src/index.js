@@ -2,7 +2,6 @@
 // axios.get('/api/info').then( res => {
 //   console.log(res)
 // })
-
 import counter from './counter'
 import number from './number'
 counter()
@@ -13,3 +12,5 @@ if (module.hot) {
     number()
   })
 }
+
+import './babel-test'
