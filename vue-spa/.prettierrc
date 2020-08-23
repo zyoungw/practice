@@ -5,7 +5,7 @@
     // 使用tab缩进，默认false
     "useTabs": true,
     // 使用分号, 默认true
-    semi": false,
-    singleQuote": true
+   "semi": false,
+    "singleQuote": true
 
 }

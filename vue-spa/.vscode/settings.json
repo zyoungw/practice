@@ -1,9 +1,7 @@
 {
   "editor.formatOnSave": true
-  // "prettier.semi": false
   //   "workbench.startupEditor": "newUntitledFile",
   //   "editor.fontSize": 13,
-  // "editor.tabSize": 2
   //   "files.exclude": {
   //     "**/.DS_Store": true,
   //     "**/.git": true,
