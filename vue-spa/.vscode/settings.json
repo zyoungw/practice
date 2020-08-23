@@ -1,0 +1,151 @@
+{
+  "editor.formatOnSave": true
+  // "prettier.semi": false
+  //   "workbench.startupEditor": "newUntitledFile",
+  //   "editor.fontSize": 13,
+  // "editor.tabSize": 2
+  //   "files.exclude": {
+  //     "**/.DS_Store": true,
+  //     "**/.git": true,
+  //     "**/.hg": true,
+  //     "**/.idea": true,
+  //     "**/.svn": true,
+  //     "**/build": true,
+  //     "**/CVS": true,
+  //     "**/dist": true,
+  //     "**/node_modules": true
+  //   },
+  //   "explorer.confirmDelete": false,
+  //   "explorer.confirmDragAndDrop": false,
+  //   "editor.roundedSelection": false,
+  //   "telemetry.enableCrashReporter": false,
+  //   "telemetry.enableTelemetry": false,
+  //   "python.disablePromptForFeatures": ["pylint"],
+  //   "editor.scrollBeyondLastLine": false,
+  //   "editor.smoothScrolling": true,
+  //   "javascript.implicitProjectConfig.experimentalDecorators": true,
+  //   "gitlens.advanced.messages": {
+  //     "suppressShowKeyBindingsNotice": true,
+  //     "suppressWelcomeNotice": true
+  //   },
+  //   "gitlens.keymap": "alternate",
+  //   "powermode.enabled": true,
+  //   "powermode.presets": "flames",
+  //   "gitlens.historyExplorer.enabled": true,
+  //   "javascript.validate.enable": false,
+  //   "window.zoomLevel": 0,
+  //   "breadcrumbs.enabled": true,
+  //   "typescript.updateImportsOnFileMove.enabled": "always",
+  //   "workbench.statusBar.feedback.visible": false,
+  //   "javascript.updateImportsOnFileMove.enabled": "never",
+  //   "editor.fontFamily": "Monaco, 'Courier New', monospace",
+  //   "dart.warnWhenEditingFilesOutsideWorkspace": false,
+  //   "workbench.colorTheme": "Dark+ Material",
+  //   "workbench.iconTheme": "material-icon-theme",
+  //   "background.enabled": false,
+  //   "git.path": "/usr/local/bin/git",
+  //   "extensions.ignoreRecommendations": false,
+  //   "search.exclude": {
+  //     ".git": true,
+  //     ".vscode": true,
+  //     "**/dist": true,
+  //     "app/main.prod.js": true,
+  //     "app/main.prod.js.map": true,
+  //     "bower_components": true,
+  //     "npm-debug.log.*": true,
+  //     "release": true
+  //   },
+  //   "workbench.colorCustomizations": {
+  //     "editor.background": "#292d3e", // 编辑区域背景色
+  //     "editor.selectionBackground": "#673ab7", // 多行选择背景色,当前选择的单词的背景色
+  //     "editor.selectionHighlightBackground": "#673ab7", // 匹配到单词的高亮背景色,不包括当前选择的单词的背景色
+  //     "editor.selectionHighlightBorder": "#673ab7", // 匹配到单词的高亮背景色,不包括当前选择的单词的背景色
+  //     "editor.lineHighlightBackground": "#424242", // 高亮当前行背景色
+  //     "editor.lineHighlightBorder": "#424242", // 高亮当前行背景色边框
+  //     "editor.wordHighlightBackground": "#e040fb", // 匹配到对应的单词的高亮背景色
+  //     "editor.wordHighlightBorder": "#e040fb", // 匹配到对应的单词的高亮背景色边框
+  //     // 搜索匹配
+  //     "editor.findMatchBackground": "#e040fb", // 搜索: 匹配到的当前单词的背景色
+  //     "editor.findMatchBorder": "#e040fb", // 搜索: 匹配到的当前单词的背景色边框
+  //     "editor.findMatchHighlightBackground": "#673ab7", // 搜索: 匹配到的单词的背景色
+  //     "editor.findMatchHighlightBorder": "#673ab7", // 搜索: 匹配到的单词的背景色边框
+  //     "editor.rangeHighlightBackground": "#424242", // 搜索: 匹配到的单词的当前行背景色
+  //     "editor.rangeHighlightBorder": "#e040fb", // 搜索: 匹配到的单词的当前行背景色边框
+  //     "editor.selectionForeground": "#ff0000", // 没作用
+  //     "editor.findRangeHighlightBorder": "#ff0000", // 没作用
+  //     "editor.findRangeHighlightBackground": "#424242", // 没作用
+  //     "editor.hoverHighlightBackground": "#424242", // 鼠标停留当前单词的背景色
+  //     // 提示选择框
+  //     "editorSuggestWidget.background": "#212121", // 提示选择框的背景色
+  //     "editorSuggestWidget.border": "#80bd4a", // 提示选择框边框颜色
+  //     "editorSuggestWidget.foreground": "#aaa", // 提示选择框字体颜色
+  //     "editorSuggestWidget.highlightForeground": "#e040fb", // 提示选择框中匹配到的单词的高亮色
+  //     // 行数区域
+  //     "editorLineNumber.foreground": "#e040fb", // 行数颜色
+  //     "editorGutter.background": "#292d3e", // 行数背景色
+  //     "editorGutter.modifiedBackground": "#f50057", // 文件被修改时行数前的Tag背景色
+  //     // 侧边栏
+  //     "sideBar.background": "#292d3e", // 侧边栏背景色
+  //     "sideBar.foreground": "#f3e5f5", // 侧边栏字体颜色
+  //     "sideBar.border": "#80bd4a", // 侧边栏边框颜色
+  //     "sideBarSectionHeader.background": "#448aff", // 侧边栏 header 背景色
+  //     "sideBarSectionHeader.border": "#82b1ff", // 侧边栏 header 边框颜色
+  //     "sideBarTitle.foreground": "#e040fb", // 侧边栏最顶部 title 字体颜色
+  //     // 滚动栏
+  //     "scrollbarSlider.background": "#80bd4a",
+  //     "scrollbarSlider.hoverBackground": "#80bd4a",
+  //     "scrollbarSlider.activeBackground": "#80bd4a",
+  //     "scrollbar.shadow": "#ccc",
+  //     // 顶部Tab栏
+  //     "tab.activeBackground": "#ea80fc",
+  //     "tab.activeForeground": "#eee",
+  //     "tab.activeBorder": "#e040fb",
+  //     "tab.border": "#e040fb",
+  //     "tab.inactiveBackground": "#212121",
+  //     "tab.inactiveForeground": "#eee",
+  //     // "tab.inactiveModifiedBorder": "#ff0000",
+  //     // "tab.activeModifiedBorder": "#ff0000",
+  //     "tab.hoverBackground": "#ea80fc",
+  //     "tab.hoverBorder": "#e040fb",
+  //     "tab.activeBorderTop": "#e040fb",
+  //     // 最左侧工具栏
+  //     "activityBar.activeBackground": "#e040fb",
+  //     "activityBar.activeBorder": "#ff0000",
+  //     "activityBar.background": "#1d1d3d",
+  //     "activityBar.border": "#80bd4a",
+  //     "activityBar.foreground": "#eee",
+  //     "activityBar.inactiveForeground": "#eee",
+  //     "activityBarBadge.background": "#ff0000",
+  //     "activityBarBadge.foreground": "#eee",
+  //     // 顶部工具栏
+  //     "titleBar.activeBackground": "#1d1d3d",
+  //     "titleBar.activeForeground": "#eee",
+  //     "titleBar.border": "#1d1d3d",
+  //     "titleBar.inactiveBackground": "#1d1d3d",
+  //     "titleBar.inactiveForeground": "#eee",
+  //     // 底部状态栏
+  //     "statusBar.background": "#1d1d3d",
+  //     "statusBar.border": "#1d1d3d",
+  //     "statusBar.foreground": "#eee",
+  //     "statusBarItem.hoverBackground": "#ea80fc",
+  //     "statusBarItem.activeBackground": "#ea80fc",
+  //     // Terminal
+  //     "terminal.background": "#292d3e",
+  //     "terminal.border": "#80bd4a",
+  //     "terminal.foreground": "#eee",
+  //     // "terminal.selectionBackground": "#673ab7",
+  //     // window
+  //     "window.activeBorder": "#673ab7",
+  //     "window.inactiveBorder": "#673ab7",
+  //     // minimap
+  //     "minimap.selectionHighlight": "#e040fb",
+  //     "minimap.findMatchHighlight": "#80bd4a",
+  //     "minimapGutter.modifiedBackground": "#ff0000",
+  //     "peekViewResult.background": "#ff0000",
+  //     "peekViewEditorGutter.background": "#ff0000",
+  //     "peekViewEditor.background": "#ff0000",
+  //     "editorUnnecessaryCode.opacity": "#e040fb" // 不重要的代码不设置透明度
+  //   },
+  //   // 是否隐藏底部状态栏
+  //   "workbench.statusBar.visible": true
+}
