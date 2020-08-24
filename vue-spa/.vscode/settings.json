@@ -13,20 +13,20 @@
       "language": "vue",
       "autoFix": true
     }
-  ],
+  ]
   //   "workbench.startupEditor": "newUntitledFile",
   //   "editor.fontSize": 13,
-  "files.exclude": {
-    "**/.DS_Store": true,
-    "**/.git": true,
-    "**/.hg": true,
-    "**/.idea": true,
-    "**/.svn": true,
-    "**/build": true,
-    "**/CVS": true,
-    "**/dist": true,
-    "**/node_modules": true
-  }
+  // "files.exclude": {
+  //   "**/.DS_Store": true,
+  //   "**/.git": true,
+  //   "**/.hg": true,
+  //   "**/.idea": true,
+  //   "**/.svn": true,
+  //   "**/build": true,
+  //   "**/CVS": true,
+  //   "**/dist": true,
+  //   "**/node_modules": true
+  // }
   //   "explorer.confirmDelete": false,
   //   "explorer.confirmDragAndDrop": false,
   //   "editor.roundedSelection": false,

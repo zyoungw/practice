@@ -1,4 +1,6 @@
 const path = require('path');
+const htmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   mode: 'development',
   // 必填 webpack执⾏行行构建⼊入⼝口
@@ -40,5 +42,13 @@ module.exports = {
         ] 
       }
     ]
-  }
+  },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new htmlWebpackPlugin({
+      title: "vue-spa",
+      filename: "index.html",
+      template: path.resolve(__dirname, '../index.html')
+    })
+  ]
 };
