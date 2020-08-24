@@ -26,6 +26,18 @@ module.exports = {
         // options: { // 这里的配置项参数将会被传递到 eslint 的 CLIEngine
         //   formatter: require('eslint-friendly-formatter') // 指定错误报告的格式规范
         // }
+      },
+      {
+        test:/\.css$/,
+        use:[
+          {
+            loader:"style-loader",
+            options: {
+                injectType: "singletonStyleTag" // 将所有的style标签合并成⼀个
+            }
+          }, 
+          "css-loader"
+        ] 
       }
     ]
   }
