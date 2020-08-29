@@ -1,6 +1,7 @@
 const path = require('path');
 const htmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   mode: 'development',
   // 必填 webpack执⾏行行构建⼊入⼝口
@@ -10,6 +11,19 @@ module.exports = {
     filename: 'main_[hash].js',
     // 输出⽂文件的存放路路径，必须是绝对路路径
     path: path.resolve(__dirname, '../dist')
+  },
+  resolve: {
+    extensions: ['.js', '.vue', '.json'],
+    modules: [
+      path.resolve(__dirname, '../src'),
+      path.resolve(__dirname, '../node_modules')
+    ],
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js',
+      '~': path.resolve(__dirname, '../src'),
+      '@': path.resolve(__dirname, '../src'),
+      'config': path.resolve(__dirname, '../config')
+    }
   },
   module: {
     rules: [
@@ -30,15 +44,18 @@ module.exports = {
         // }
       },
       {
-        test:/\.css$/,
+        test:/\.less$/,
         use:[
-          {
-            loader:"style-loader",
-            options: {
-                injectType: "singletonStyleTag" // 将所有的style标签合并成⼀个
-            }
-          }, 
-          "css-loader"
+          // {
+          //   loader:"style-loader",
+          //   options: {
+          //       injectType: "singletonStyleTag" // 将所有的style标签合并成⼀个
+          //   }
+          // }, 
+          MiniCssExtractPlugin.loader,
+          "css-loader", 
+          "less-loader",
+          "postcss-loader"
         ] 
       }
     ]
@@ -49,6 +66,14 @@ module.exports = {
       title: "vue-spa",
       filename: "index.html",
       template: path.resolve(__dirname, '../index.html')
-    })
+    }),
+    new MiniCssExtractPlugin({
+      filename: "css/[name]_[contenthash:6].css",
+      chunkFilename: "[id].css"
+    }),
+    // 该配置不成功
+    // require("autoprefixer")({
+    //   overrideBrowserslist: ["last 2 versions", ">1%"]
+    // })
   ]
 };
